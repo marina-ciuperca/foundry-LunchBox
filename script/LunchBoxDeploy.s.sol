@@ -9,7 +9,7 @@ contract LunchBoxDeploy is Script {
 
 function run() external returns (LunchBox){
 vm.startBroadcast();
-LunchBox lunchBox = new LunchBox(5085);
+LunchBox lunchBox = new LunchBox(5085); // here is your VRF Subscription ID
 vm.stopBroadcast();
 return lunchBox;
 }
